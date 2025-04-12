@@ -25,7 +25,7 @@ var term = $('#terminal').terminal(async function(command, term) {
             const data = await response.json();
             const result = data?.candidates?.[0]?.content?.parts?.[0]?.text;
             if (result) {
-                term.echo("\nchatbot> " + result.trim());
+                term.echo("\nchatbot> " + result.trim() + "\n");
             } else {
                 term.error("yapay-zeka boş bir yanıt döndürdü.");
             }
