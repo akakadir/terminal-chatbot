@@ -41,7 +41,7 @@ var term = $('#terminal').terminal(async function(command, term) {
     greetings: '',
     onInit: function() {
     $.ajaxSetup({async: false})
-    $.get('https://files.catbox.moe/qw6n4h.txt', function(x){
+    $.get('https://files.catbox.moe/v4xcbj.txt', function(x){
     banner = x;
     });
     this.echo(banner)
