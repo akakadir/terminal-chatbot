@@ -1,6 +1,8 @@
 const API_KEY = "AIzaSyBPjgiuW8VPMX4RAJfRSgo7LBSdjo3YLjI";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
+let banner = ""; // HATA BURADA: Tanım eksikti, eklendi
+
 var term = $('#terminal').terminal(async function(command, term) {
     var cmd = $.terminal.parse_command(command);
 
@@ -40,11 +42,11 @@ var term = $('#terminal').terminal(async function(command, term) {
     prompt: 'root> ',
     greetings: '',
     onInit: function() {
-    $.ajaxSetup({async: false})
-    $.get('https://files.catbox.moe/v4xcbj.txt', function(x){
-    banner = x;
-    });
-    this.echo(banner)
+        $.ajaxSetup({async: false});
+        $.get('https://files.catbox.moe/v4xcbj.txt', function(x){
+            banner = x;
+        });
+        this.echo(banner);
     }
 });
 
