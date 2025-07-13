@@ -4,11 +4,10 @@ const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-
 const banner = `
        __        __           ___
  ___ _/ /_____ _/ /_____ ____/ (_)___
-/ _ `/  '_/ _ `/  '_/ _ `/ _  / / __/
-\_,_/_/\_\\_,_/_/\_\\_,_/\_,_/_/_/
+/ _ \`/  '_/ _ \`/  '_/ _ \`/ _  / / __/
+/_,_/_/\\_\\\\_,_/_/\\_\\\\_,_/_,_/_/_/
 
 Chatbot v1.7 - https://akakadir.github.io
-
 `;
 
 var term = $('#terminal').terminal(async function(command, term) {
