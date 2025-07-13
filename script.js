@@ -2,12 +2,11 @@ const API_KEY = "AIzaSyBPjgiuW8VPMX4RAJfRSgo7LBSdjo3YLjI";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const banner = `
-         __         __             ___     
-  ____ _/ /______ _/ /______ _____/ (_)____
- / __ `/ //_/ __ `/ //_/ __ `/ __  / / ___/
-/ /_/ / ,< / /_/ / ,< / /_/ / /_/ / / /    
-\__,_/_/|_|\__,_/_/|_|\__,_/\__,_/_/_/     
-                                           
+        __          __             __ __      
+ .---.-|  |--.---.-|  |--.---.-.--|  |__.----.
+ |  _  |    <|  _  |    <|  _  |  _  |  |   _|
+ |___._|__|__|___._|__|__|___._|_____|__|__|  
+                                                                                           
 Chatbot v1.7 - https://akakadir.github.io
 `;
 
